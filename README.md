@@ -6,103 +6,61 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una máscara que le ayude a prevenir contagiarse del COVID-19.
 
+## Procedimiento 🛠️
 
-### Pre-requisitos 📋
+1. **Leer** la imagen o frame de video.
+2. **Aplicar CNN_Face_Detector** para detectar todos los rostros en la imagen.
+3. **Aplicar CNN_Mask_Class** para determinar si el rostro tiene o no mascarilla.
+4. **Insertar recuadro clasificador** en rostro de imagen original.
+5. **Repetir el proceso** para todos los rostros en la imagen.
+
+Conoce más sobre la arquitectura y el funcionamiento del proyecto en la siguiente [presentación](https://github.com/jjrodcast/MaskDectector/blob/master/presentacion/Proyecto_Final_PFDS.pdf).
+
+## Pre-Requisitos 📋
 
 Este proyecto inicialmente ha sido diseñado para poder ser ejecutado en Colab y para una optimización se activó el entorno de ejecución en GPU.
-Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesario instalar:
+Colab ya trae instaladas muchas de las librerías utilizadas en este proyecto, solo fue necesario instalar adicionalmente:
 - mtcnn
 
 ```
 !pip install mtcnn
 ```
 
+## Archivos necesarios para la ejecución 🛠️
 
-### Archivos necesarios para la ejecución ⌨️
+**- MODELOS:**
 
-_Modelos:_
+**_model/mask_net.hdf5_** : Model CNN entrenado desde cero con Keras.
 
-**model/mask_net.hdf5**: Model CNN entrenado desde cero con Keras.
+**_model/best_model_conv_ft2.model_** : Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
 
-**model/best_model_conv_ft2.model**: Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
+**- UTILITARIOS:**
 
+**_utils/bounding_box.py_** : Utilitario para incrementar en un porcentaje dato el cuadro delimitador de un rostro en una imagen.
 
-### Instalación 🔧 --- Se piensa omitir
+**_utils/predictor_keras.py_** : Utilitario para generar las predicciones con el modelo entrenado de Keras.
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+**_utils/predictor_pytorch.py_** : Utilitario para generar las predicciones con el modelo entrenado con Pytorch.
 
-_Dí cómo será ese paso_
+**- ARCHIVO PRINCIPAL:**
 
-```
-Da un ejemplo
-```
+**_MaskDetector.ipynb_** : Notebook con las pruebas end-to-end para generar sobre imágenes y videos las predicciones de si una persona está usando o no una mascarilla.
 
-_Y repite_
+## Proceso de Ejecución ⚙️ 
 
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* Levantar el notebook principal en Colab
+* Cargar los archivos necesarios al notebook
+* Validar que el Tipo de Entorno de Ejecución está en **GPU**
+* Ejecutar todo el notebook
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+* **Jorge Rodríguez Castillo** - [Linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [Github](https://github.com/jjrodcast)
+* **Keven Fernández Carrillo** - [Linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [Github](https://github.com/KevenRFC)
+* **David Fosca Gamarra** - [Linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [Github](https://github.com/DavidFosca)
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia **GNU General Public License v3.0** - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊

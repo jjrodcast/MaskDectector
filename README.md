@@ -32,13 +32,15 @@ Colab ya trae instaladas muchas de las librerías utilizadas en este proyecto, s
 
 📌 **MODELOS:**
 
-* **_model/mask_net.hdf5_** : Model CNN entrenado desde cero con Keras.
+* **_models/mask_net.hdf5_** : Model CNN entrenado desde cero con Keras.
 
-* **_model/best_model_conv_ft2.model_** : Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
+* **_models/best_model_conv_ft2.model_** : Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
 
 📌 **UTILITARIOS:**
 
 * **_utils/bounding_box.py_** : Utilitario para incrementar en un porcentaje dato el cuadro delimitador de un rostro en una imagen.
+
+* **_utils/detect_faces.py_** : Utilitario para detectar las caras en las imágenes o frames de videos.
 
 * **_utils/predictor_keras.py_** : Utilitario para generar las predicciones con el modelo entrenado de Keras.
 
@@ -50,7 +52,7 @@ Colab ya trae instaladas muchas de las librerías utilizadas en este proyecto, s
 
 📌 **ARCHIVOS MULTIMEDIA:**
 
-Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes utilizar las imágenes colocadas en la carpeta "multimedia"
+Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes utilizar las imágenes colocadas en la carpeta "multimedia/"
 
 ## Proceso de Ejecución ⚙️ 
 

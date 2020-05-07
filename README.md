@@ -18,7 +18,7 @@ Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesari
 ```
 
 
-## Archivos necesarios para la ejecución ⌨️
+## Archivos necesarios para la ejecución 🛠️
 
 **- MODELOS:**
 
@@ -59,7 +59,7 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ## Autores ✒️
 
-* **David Fosca Gamarra** - [linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [github](https://github.com/jjrodcast)
+* **Jorge Rodríguez Castillo** - [linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [github](https://github.com/jjrodcast)
 * **Keven Fernández Carrillo** - [linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [github](https://github.com/KevenRFC)
 * **David Fosca Gamarra** - [linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [github](https://github.com/DavidFosca)
 

@@ -7,7 +7,7 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una máscara que le ayude a prevenir contagiarse del COVID-19.
 
 
-### Pre-requisitos 📋
+## Pre-requisitos 📋
 
 Este proyecto inicialmente ha sido diseñado para poder ser ejecutado en Colab y para una optimización se activó el entorno de ejecución en GPU.
 Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesario instalar:
@@ -18,16 +18,27 @@ Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesari
 ```
 
 
-### Archivos necesarios para la ejecución ⌨️
+## Archivos necesarios para la ejecución ⌨️
 
-_Modelos:_
+**- MODELOS:**
 
-**model/mask_net.hdf5**: Model CNN entrenado desde cero con Keras.
+**_model/mask_net.hdf5_** : Model CNN entrenado desde cero con Keras.
 
-**model/best_model_conv_ft2.model**: Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
+**_model/best_model_conv_ft2.model_** : Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
 
+**- UTILITARIOS:**
 
-### Instalación 🔧 --- Se piensa omitir
+**_utils/bounding_box.py_** : Utilitario para incrementar en un porcentaje dato el cuadro delimitador de una imagen que contiene un rostro.
+
+**_utils/predictor_keras.py_** : Utilitario para generar las predicciones con el modelo entrenado de Keras.
+
+**_utils/predictor_pytorch.py_** : Utilitario para generar las predicciones con el modelo entrenado con Pytorch.
+
+**- ARCHIVO PRINCIPAL:**
+
+**_MaskDetector.ipynb_** : Notebook con las pruebas end-to-end para generar sobre imágenes y videos las predicciones de si una persona está usando o no una mascarilla.
+
+## Instalación 🔧 --- Se piensa omitir
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
@@ -45,64 +56,15 @@ hasta finalizar
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+* **David Fosca Gamarra** - [linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [github](https://github.com/jjrodcast)
+* **Keven Fernández Carrillo** - [linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [github](https://github.com/KevenRFC)
+* **David Fosca Gamarra** - [linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [github](https://github.com/DavidFosca)
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (XYZW) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊

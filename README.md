@@ -4,18 +4,28 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 
 ## Objetivo 🚀
 
-Este proyecto contiene una implementación para detectar en un video qué personas están usando una máscara que le ayude a prevenir el COVID-19.
+Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una máscara que le ayude a prevenir contagiarse del COVID-19.
 
 
 ### Pre-requisitos 📋
 
-Este proyecto ha sido diseñado para ejecutar en Colab y para una optimización se activó el entorno de ejecución en GPU.
-Colab ya trae consigo muchas de las librería ya utilizadas, pero fue necesario instalar:
+Este proyecto inicialmente ha sido diseñado para poder ser ejecutado en Colab y para una optimización se activó el entorno de ejecución en GPU.
+Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesario instalar:
 - mtcnn
 
 ```
 !pip install mtcnn
 ```
+
+
+### Archivos necesarios para la ejecución ⌨️
+
+_Modelos:_
+
+**model/mask_net.hdf5**: Model CNN entrenado desde cero con Keras.
+
+**model/best_model_conv_ft2.model**: Modelo CNN pre-entrenado de ResNet18 en Pytorch, del cual se mantuvo la estructura de la red y se volvieron a entrenar los pesos en todas las capas.
+
 
 ### Instalación 🔧 --- Se piensa omitir
 
@@ -47,13 +57,6 @@ _Explica que verifican estas pruebas y por qué_
 Da un ejemplo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Despliegue 📦
 

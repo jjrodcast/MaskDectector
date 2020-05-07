@@ -1,3 +1,4 @@
 def predict(model, classes, image):
-    pred = model.predict(image)
-    return classes[int(pred[0])]
+    prob = model.predict(image)
+    pred = 0 if prob[0] < 0.5 else 1
+    return (classes[pred], prob)

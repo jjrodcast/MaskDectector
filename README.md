@@ -6,17 +6,25 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una máscara que le ayude a prevenir contagiarse del COVID-19.
 
+## Procedimiento 🛠️
 
-## Pre-requisitos 📋
+1. **Leer** la imagen o frame de video.
+2. **Aplicar CNN_Face_Detector** para detectar todos los rostros en la imagen.
+3. **Aplicar CNN_Mask_Class** para determinar si el rostro tiene o no mascarilla.
+4. **Insertar recuadro clasificador** en rostro de imagen original.
+5. **Repetir el proceso** para todos los rostros en la imagen.
+
+Conoce más sobre la arquitectura y el funcionamiento del proyecto en la siguiente [presentación](https://github.com/jjrodcast/MaskDectector/blob/master/presentacion/Proyecto_Final_PFDS.pdf).
+
+## Pre-Requisitos 📋
 
 Este proyecto inicialmente ha sido diseñado para poder ser ejecutado en Colab y para una optimización se activó el entorno de ejecución en GPU.
-Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesario instalar:
+Colab ya trae instaladas muchas de las librerías utilizadas en este proyecto, solo fue necesario instalar adicionalmente:
 - mtcnn
 
 ```
 !pip install mtcnn
 ```
-
 
 ## Archivos necesarios para la ejecución 🛠️
 
@@ -28,7 +36,7 @@ Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesari
 
 **- UTILITARIOS:**
 
-**_utils/bounding_box.py_** : Utilitario para incrementar en un porcentaje dato el cuadro delimitador de una imagen que contiene un rostro.
+**_utils/bounding_box.py_** : Utilitario para incrementar en un porcentaje dato el cuadro delimitador de un rostro en una imagen.
 
 **_utils/predictor_keras.py_** : Utilitario para generar las predicciones con el modelo entrenado de Keras.
 
@@ -38,30 +46,18 @@ Colab ya trae consigo muchas de las librería ya utilizadas, aunque fue necesari
 
 **_MaskDetector.ipynb_** : Notebook con las pruebas end-to-end para generar sobre imágenes y videos las predicciones de si una persona está usando o no una mascarilla.
 
-## Instalación 🔧 --- Se piensa omitir
+## Proceso de Ejecución ⚙️ 
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
+* Levantar el notebook principal en Colab
+* Cargar los archivos necesarios al notebook
+* Validar que el Tipo de Entorno de Ejecución está en **GPU**
+* Ejecutar todo el notebook
 
 ## Autores ✒️
 
-* **Jorge Rodríguez Castillo** - [linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [github](https://github.com/jjrodcast)
-* **Keven Fernández Carrillo** - [linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [github](https://github.com/KevenRFC)
-* **David Fosca Gamarra** - [linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [github](https://github.com/DavidFosca)
+* **Jorge Rodríguez Castillo** - [Linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [Github](https://github.com/jjrodcast)
+* **Keven Fernández Carrillo** - [Linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [Github](https://github.com/KevenRFC)
+* **David Fosca Gamarra** - [Linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [Github](https://github.com/DavidFosca)
 
 
 ## Licencia 📄

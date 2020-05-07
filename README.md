@@ -1,5 +1,6 @@
 # Mask Detector
 
+Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado de Inteligencia Artificial de la PUCP.
 
 ## Objetivo 🚀
 
@@ -8,13 +9,15 @@ Este proyecto contiene una implementación para detectar en un video qué person
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Este proyecto ha sido diseñado para ejecutar en Colab y para una optimización se activó el entorno de ejecución en GPU.
+Colab ya trae consigo muchas de las librería ya utilizadas, pero fue necesario instalar:
+- mtcnn
 
 ```
-Da un ejemplo
+!pip install mtcnn
 ```
 
-### Instalación 🔧
+### Instalación 🔧 --- Se piensa omitir
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 

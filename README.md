@@ -7,7 +7,7 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una mascarilla que le ayude a prevenir contagiarse del COVID-19.
 
 <p align="center"> 
-    <img src="https://raw.githubusercontent.com/jjrodcast/MaskDectector/master/presentacion/Mask_Detector_Result01.jpeg?token=AFY5BAH4WPYDBJ4VPYJWH4C6WVRWO" alt="Result01">
+    <img src="https://user-images.githubusercontent.com/7152507/81418323-1d958b00-9112-11ea-8332-46ab0b7353f9.jpeg" alt="Resultado">
 </p>
 
 ## Procedimiento 🛠️

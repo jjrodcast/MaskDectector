@@ -7,7 +7,7 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una mascarilla que le ayude a prevenir contagiarse del COVID-19.
 
 <p align="center"> 
-    <img src="https://raw.githubusercontent.com/jjrodcast/MaskDectector/master/presentacion/Mask_Detector_Result01.jpeg?token=AFY5BAAGBP4NGDO4ZK2XROC6WTOO4" alt="Result01">
+    <img src="https://raw.githubusercontent.com/jjrodcast/MaskDectector/master/presentacion/Mask_Detector_Result01.jpeg?token=AFY5BACXJFH4FNDYLRMYMTS6WTPQU" alt="Result01">
 </p>
 
 ## Procedimiento 🛠️
@@ -20,7 +20,7 @@ El proceso general para obtener las detecciones de rostros con o sin mascarillas
 4. **Insertar recuadro clasificador** en rostro de imagen original.
 5. **Repetir el proceso** para todos los rostros en la imagen.
 
-Conoce más sobre la arquitectura y el funcionamiento del proyecto en la siguiente [presentación](https://github.com/jjrodcast/MaskDectector/blob/master/presentacion/Proyecto_Final_PFDS.pdf).
+Conoce más sobre la arquitectura, el funcionamiento y los resultados obtenidos del proyecto en la siguiente [presentación](https://github.com/jjrodcast/MaskDectector/blob/master/presentacion/Proyecto_Final_PFDS.pdf).
 
 ## Pre-Requisitos 📋
 
@@ -65,7 +65,7 @@ Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes u
 * Validar que el Tipo de Entorno de Ejecución está en **GPU**
 * Ejecutar todo el notebook
 
-# Archivos Adicionales 📁
+## Archivos Adicionales 📁
 
 * **notebooks/CNN_Zero_ProyectoFinal.ipynb** : Notebook para generar el modelo entrenado desde cero con Keras para predecir si un rostro en una imagen tiene una mascarilla o no.
 

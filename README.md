@@ -4,7 +4,7 @@ Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado
 
 ## Objetivo 🚀
 
-Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una máscara que le ayude a prevenir contagiarse del COVID-19.
+Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una mascarilla que le ayude a prevenir contagiarse del COVID-19.
 
 ## Procedimiento 🛠️
 
@@ -52,7 +52,7 @@ Colab ya trae instaladas muchas de las librerías utilizadas en este proyecto, s
 
 📌 **ARCHIVOS MULTIMEDIA:**
 
-Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes utilizar las imágenes colocadas en la carpeta "multimedia/"
+Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes utilizar las imágenes presentes en la carpeta **"multimedia/"**.
 
 ## Proceso de Ejecución ⚙️ 
 
@@ -67,6 +67,15 @@ Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes u
 * **Keven Fernández Carrillo** - [Linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [Github](https://github.com/KevenRFC)
 * **David Fosca Gamarra** - [Linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [Github](https://github.com/DavidFosca)
 
+## Documentación de apoyo 📚
+
+Face Detection with Deep Learning using Multi Tasked Cascased CNN: https://towardsdatascience.com/face-detection-with-deep-learning-using-multi-tasked-cascased-cnn-8721435531d5
+
+Basic classification: Classify images of clothing: https://www.tensorflow.org/tutorials/keras/classification
+
+Train and evaluate with Keras: https://www.tensorflow.org/guide/keras/train_and_evaluate
+
+Transfer Learning for Computer Vision Tutorial: https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
 
 ## Licencia 📄
 

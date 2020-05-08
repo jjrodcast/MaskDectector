@@ -34,7 +34,7 @@ def detect_faces_with_mask(img, face_model, mask_model, classes=['no_mask', 'mas
             x, y, w, h = resizeBoundingBox((img.shape[1], img.shape[0]), bbox, bbox_percentage)
             img_face_slice = img[y:(y + h),x:(x + w), :]
             img_resize = cv2.resize(img_face_slice, target_size, cv2.INTER_AREA)
-            pred,_ = predict(mask_model, classes, np.expand_dims(img_resize[:,:,::-1], axis = 0)) if predictor == 'keras' else model_predict(mask_model, img, classes)
+            pred,_ = predict(mask_model, classes, np.expand_dims(img_resize[:,:,::-1], axis = 0)) if predictor == 'keras' else model_predict(mask_model, img_resize, classes)
             color = (0,255, 0) if pred == 'mask' else (255,0,0)
             cv2.rectangle(img_color, (x, y), (x + w, y + h), color, 3)
             cv2.putText(img_color, pred.replace("_", " ").capitalize(), (x-2, y-7), cv2.FONT_HERSHEY_SIMPLEX, .9, color, 2)

@@ -61,11 +61,13 @@ Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes u
 * Validar que el Tipo de Entorno de Ejecución está en **GPU**
 * Ejecutar todo el notebook
 
-## Autores ✒️
+# Archivos Adicionales 📁
 
-* **Jorge Rodríguez Castillo** - [Linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [Github](https://github.com/jjrodcast)
-* **Keven Fernández Carrillo** - [Linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [Github](https://github.com/KevenRFC)
-* **David Fosca Gamarra** - [Linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [Github](https://github.com/DavidFosca)
+* **notebooks/CNN_Zero_ProyectoFinal.ipynb** : Notebook para generar el modelo entrenado desde cero con Keras para predecir si un rostro en una imagen tiene una mascarilla o no.
+
+* **notebooks/VC_MaskDetector_Transfer Learning.ipynb** : Notebook con Transfer Learning del modelo pre-entrenado de ResNet18 con Pytorch para predecir si un rostro en una imagen tiene una mascarilla o no.
+
+* **dataset/** : Este folder contiene los datasets utilizados para entrenar y validar los modelos clasificadores del uso de la mascarilla.
 
 ## Documentación de apoyo 📚
 
@@ -75,7 +77,15 @@ Basic classification: Classify images of clothing: https://www.tensorflow.org/tu
 
 Train and evaluate with Keras: https://www.tensorflow.org/guide/keras/train_and_evaluate
 
+Image classification from scratch in keras: https://towardsdatascience.com/image-detection-from-scratch-in-keras-f314872006c9
+
 Transfer Learning for Computer Vision Tutorial: https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+
+## Autores ✒️
+
+* **Jorge Rodríguez Castillo** - [Linkedin](https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo/) - [Github](https://github.com/jjrodcast)
+* **Keven Fernández Carrillo** - [Linkedin](https://www.linkedin.com/in/keven-fern%C3%A1ndez-carrillo-50b07aa2/) - [Github](https://github.com/KevenRFC)
+* **David Fosca Gamarra** - [Linkedin](https://www.linkedin.com/in/davidfoscagamarra/) - [Github](https://github.com/DavidFosca)
 
 ## Licencia 📄
 

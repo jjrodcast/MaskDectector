@@ -8,7 +8,7 @@ Este proyecto contiene una implementación para detectar en una imagen o un vide
 
 ## Procedimiento 🛠️
 
-El proceso general para obtener las detecciones de rostros con o sin máscarillas es el siguiente:
+El proceso general para obtener las detecciones de rostros con o sin mascarillas es el siguiente:
 
 1. **Leer** la imagen o frame de video.
 2. **Aplicar modelo CNN_Face_Detector** para detectar todos los rostros en la imagen.

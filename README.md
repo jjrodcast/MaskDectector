@@ -71,7 +71,7 @@ Básicamente puedes cargar imágenes o videos propios, pero por defecto puedes u
 
 * **notebooks/VC_MaskDetector_Transfer Learning.ipynb** : Notebook con Transfer Learning del modelo pre-entrenado de ResNet18 con Pytorch para predecir si un rostro en una imagen tiene una mascarilla o no.
 
-* **dataset/** : Este folder contiene los datasets utilizados para entrenar y validar los modelos clasificadores del uso de la mascarilla.
+* **dataset/** : Este folder contiene los datasets utilizados para entrenar y validar los modelos clasificadores del uso de la mascarilla. _Repositorio Fuente:_ facial_mask_classifier (https://bit.ly/3beau7v)
 
 ## Documentación de apoyo 📚
 

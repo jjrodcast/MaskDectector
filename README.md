@@ -2,6 +2,8 @@
 
 Proyecto Final de fin de curso de *_Python para Ciencia de Datos_* del Diplomado de Inteligencia Artificial de la PUCP.
 
+Puedes ver la versión usando YOLOv4 en el siguiente enlace: [MaskDetector-YoloV4](https://github.com/jjrodcast/MaskDetector-YoloV4)
+
 ## Objetivo 🚀
 
 Este proyecto contiene una implementación para detectar en una imagen o un video qué personas están usando una mascarilla que le ayude a prevenir contagiarse del COVID-19.
